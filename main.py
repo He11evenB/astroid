@@ -36,7 +36,6 @@ def main():
             if asteroid.collision(player):
                 raise SystemExit("Game over!")
         pygame.display.flip()
-        player.rate_limit -= dt
         dt = clock.tick(60) / 1000
 
 if __name__ == "__main__":
